@@ -18,6 +18,7 @@ public class HistogramDisplay extends ApplicationFrame{
     public HistogramDisplay(String title,Histogram<String> histogram) {
         super(title);
         hist = histogram;
+        createChart(createDataSet());
         setContentPane(createPanel());
         pack();
     }
